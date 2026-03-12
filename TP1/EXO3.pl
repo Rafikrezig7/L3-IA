@@ -1,8 +1,14 @@
-Home(omar).homme(said).homme(fethi).homme(adam).femme(leila).femme(samira).femme(imene).femme(maria).
-fruit(pommes).fruit(orange).fruit(tomate).
+homme(omar). homme(said). homme(fethi). homme(adam).
+femme(leila). femme(samira). femme(imene). femme(maria).
+fruit(pommes). fruit(oranges). fruit(tomate).
 legumes(carottes). legumes(epinard).
 soda(coca). soda(fanta). soda(pepsi).
 tabac(cigarette). tabac(chicha). tabac(cigarette_elect). tabac(cigare).
+
+
+aime(adam, pommes).  aime(omar, cigarette). aime(omar, cigare).
+
+
 
 aime(adam, pommes).  aime(omar, cigarette). aime(omar, cigare).
 aime(omar, fanta).   aime(omar, pommes).    aime(samira, coca).
