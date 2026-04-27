@@ -1,12 +1,8 @@
 som(0,0).
-som(N,S):-
-N>0,N1 is N-1, som(N1,S1),S is S1 + N.
-fact(0, 1).
+som(N,S):- N>0,N1 is N-1, som(N1,S1),S is S1 + N.
 
-
-fact(N, F) :-
-    N > 0, N1 is N - 1,fact(N1, F1),F is N * F1.
-
+fact(0, 1). 
+fact(N, F):- N > 0, N1 is N - 1,fact(N1, F1),F is N * F1.
 
 /*
 nbre_p(0). 
@@ -17,4 +13,7 @@ go below 0 =failure=X is odd
 */
 
 impair(1).
-impair(X) :- X > 1, X1 is X - 2, impair(X1).
+impair(X):- X > 1, X1 is X - 2, impair(X1).
+
+fact(0,1).
+fact(N,S):- N>0,N1 is N-1 , fact(N1,Fa),F is N*F1.

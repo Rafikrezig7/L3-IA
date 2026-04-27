@@ -19,8 +19,11 @@ Result 5
 2
 1
 */
-aff_croissant(I,N):- I>N.
-aff_croissant(I,N):- I=<N,write(I),nl,I1 is I+1, aff_croissant(I1,N).
+val_aff(0).
+val_aff(N) :- N > 0 , writeln(N), N1 is N - 1 , val_aff(N1).
+
+aff_croissant(I,N) :- I>N.
+aff_croissant(I,N) :- I=<N, writeln(I), I1 is I + 1 , aff_croissant(I1,N).
 
 ecrit(0).
-ecrit(N):- N>0, write('bonjour'),nl,N1 is N-1, ecrit(N1).
+ecrit(N) :- N>0 , writeln('bonjour') , N1 is N-1, ecrit(N1).
